@@ -6,4 +6,4 @@ CREATE TABLE curso (
     duracion INT
 )
 
-SELECT * FROM curso
+SELECT * FROM curso ORDER BY id

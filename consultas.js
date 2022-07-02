@@ -33,7 +33,7 @@ const newCurso = async (nombre, nivelTecnico, fechaInicio, duracion) => {
 // SCrear función asíncrona de nombre “getCurso” que realiza consulta SQL para obtener y retornar todos los registros de la tabla 'cursos'
 const getCurso = async () => {
     const sqlGetCurso = {
-        text: `SELECT * FROM curso`,
+        text: `SELECT * FROM curso ORDER BY id`,
     }
     try {
         const result = await pool.query(sqlGetCurso)
